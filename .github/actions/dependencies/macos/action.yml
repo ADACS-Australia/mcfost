@@ -14,7 +14,6 @@ runs:
         sudo /Volumes/m_fortran-compiler-classic_p_2023.2.0.49001_offline/bootstrapper.app/Contents/MacOS/install.sh --silent --eula accept
         hdiutil attach m_cpp-compiler-classic_p_2023.2.0.48999_offline.dmg
         sudo /Volumes/m_cpp-compiler-classic_p_2023.2.0.48999_offline/bootstrapper.app/Contents/MacOS/install.sh --silent --eula accept
-        cp /opt/intel/oneapi/compiler/2023.2.0/mac/bin/intel64/ifort /usr/local/include
 
     - name: fix gcc issue on the runner
       if: ${{ matrix.compiler == 'gfortran' }}
