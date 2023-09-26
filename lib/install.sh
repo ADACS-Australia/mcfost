@@ -298,19 +298,10 @@ fi
 
 #-- Put in final directory
 echo "Installing MCFOST libraries in $MCFOST_INSTALL/lib/$SYSTEM"
-echo "making include dir"
 mkdir -p "$MCFOST_INSTALL/include"
-echo "copying to include dir"
-echo "source:"
-ls -R include/
-echo "destination:"
-ls -R "$MCFOST_INSTALL/include/"
 \cp -r include/* "$MCFOST_INSTALL/include/"
-echo "making lib dir"
 mkdir -p "$MCFOST_INSTALL/lib/$SYSTEM"
-echo "copying to lib dir"
 \cp -r lib/*.a "$MCFOST_INSTALL/lib/$SYSTEM"
-echo "Done"
 
 #-- Final cleaning
 ./clean.sh
