@@ -20,7 +20,7 @@ runs:
       if: ${{ matrix.compiler == 'gfortran' }}
       shell: bash
       run: |
-        brew install gcc@13
+        brew reinstall gcc@13
         ln -s /usr/local/bin/gcc-13 /usr/local/bin/gcc
         ln -s /usr/local/bin/g++-13 /usr/local/bin/g++
 
