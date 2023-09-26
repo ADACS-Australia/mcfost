@@ -299,6 +299,7 @@ fi
 #-- Put in final directory
 echo "Installing MCFOST libraries in $MCFOST_INSTALL/lib/$SYSTEM"
 mkdir -p "$MCFOST_INSTALL/include"
+ls -latrh "$MCFOST_INSTALL"
 \cp -r include/* "$MCFOST_INSTALL/include/"
 mkdir -p "$MCFOST_INSTALL/lib/$SYSTEM"
 \cp -r lib/*.a "$MCFOST_INSTALL/lib/$SYSTEM"
